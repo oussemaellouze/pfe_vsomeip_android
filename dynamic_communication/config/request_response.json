@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "description": "Configuration Wireshark - Service et Client RR combinés",
+    "version": "1.0",
+    "created": "2026-05-11"
+  },
+  "patterns": {
+    "rr": {
+      "pattern": "request_response",
+      "rr_fusion": "sum",
+      "service": {
+        "role": "service",
+        "service_id": "0x3333",
+        "instance_id": "0x0001",
+        "method_id": "0x0100",
+        "app_service_name": "dyn_service_app"
+      },
+      "client": {
+        "role": "client",
+        "service_id": "0x3333",
+        "instance_id": "0x0001",
+        "method_id": "0x0100",
+        "app_client_name": "dyn_client_app",
+        "v1": 100,
+        "v2": 200
+      }
+    }
+  }
+}

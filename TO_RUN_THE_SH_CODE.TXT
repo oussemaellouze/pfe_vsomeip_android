@@ -1,0 +1,13 @@
+1-Build THE PROJECT: 
+    cd dynamic_communication/
+    rm -rf build && mkdir build
+    cmake -S . -B build -DCMAKE_PREFIX_PATH="$PWD/../_install"
+    cmake --build build -j
+2-RUN THE PTRONS:
+    *rr:CAPTURE_USE_IP_LAB=1 ./run_wireshark_capture.sh ../config/request_response.json rr
+    *ff:CAPTURE_USE_IP_LAB=1 ./run_wireshark_capture.sh ../config/fire_and_forget.json ff
+    *field:CAPTURE_USE_IP_LAB=1 ./run_wireshark_capture.sh ../config/field.json field
+    *event:CAPTURE_USE_IP_LAB=1 ./run_wireshark_capture.sh ../config/event.json event 
+3-why to use CAPTURE_USE_IP_LAB:
+ to blive that we have tow diferente réseux client and servise from diferente use 
+ 

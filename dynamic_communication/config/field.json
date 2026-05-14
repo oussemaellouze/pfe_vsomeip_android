@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "description": "Configuration Field Pattern - Service et Client combinés",
+    "version": "1.0",
+    "created": "2026-05-11",
+    "pattern_info": "Field pattern: Client can read/write field values with event notifications on change"
+  },
+  "patterns": {
+    "field": {
+      "pattern": "field",
+      "service": {
+        "role": "service",
+        "service_id": "0x3333",
+        "instance_id": "0x0001",
+        "event_id": "0x8002",
+        "eventgroup_id": "0x0002",
+        "app_service_name": "dyn_service_app",
+        "v1": 150
+      },
+      "client": {
+        "role": "client",
+        "service_id": "0x3333",
+        "instance_id": "0x0001",
+        "event_id": "0x8002",
+        "eventgroup_id": "0x0002",
+        "app_client_name": "dyn_client_app"
+      },
+      "options": {
+        "max_iterations": 8,
+        "service_run_seconds": 10,
+        "client_run_seconds": 5
+      }
+    }
+  }
+}

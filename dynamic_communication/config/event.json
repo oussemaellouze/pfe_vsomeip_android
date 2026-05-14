@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "description": "Configuration Event Pattern - Service et Client combinés",
+    "version": "1.0",
+    "created": "2026-05-11",
+    "pattern_info": "Event pattern: Service publishes events, Client subscribes to receive them"
+  },
+  "patterns": {
+    "event": {
+      "pattern": "event",
+      "service": {
+        "role": "service",
+        "service_id": "0x3333",
+        "instance_id": "0x0001",
+        "event_id": "0x8001",
+        "eventgroup_id": "0x0001",
+        "app_service_name": "dyn_service_app"
+      },
+      "client": {
+        "role": "client",
+        "service_id": "0x3333",
+        "instance_id": "0x0001",
+        "event_id": "0x8001",
+        "eventgroup_id": "0x0001",
+        "app_client_name": "dyn_client_app"
+      },
+      "options": {
+        "max_iterations": 10,
+        "service_run_seconds": 10,
+        "client_run_seconds": 5
+      }
+    }
+  }
+}
