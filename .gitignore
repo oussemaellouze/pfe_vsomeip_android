@@ -1,0 +1,23 @@
+
+
+# Third-party source (do not commit build outputs here)
+vsomeip/
+
+# Build / install artifacts
+_install/
+**/build/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/Makefile
+**/*.o
+**/*.a
+**/*.so
+**/*.so.*
+
+# Python caches / UI runtime state
+**/__pycache__/
+dynamic_communication/ui/results.json
+
+# Captures / logs
+dynamic_communication/wireshark/
